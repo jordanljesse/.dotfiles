@@ -10,7 +10,7 @@ export ZSH=/Users/Jordan/.oh-my-zsh
 ZSH_THEME="agnoster"
 
 # Set name of user
-DEFAULT_USER="Jordan"
+DEFAULT_USER="jordan"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -35,7 +35,7 @@ DEFAULT_USER="Jordan"
 # ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
-COMPLETION_WAITING_DOTS="true"
+# COMPLETION_WAITING_DOTS="true"
 
 # Uncomment the following line if you want to disable marking untracked files
 # under VCS as dirty. This makes repository status check for large repositories
@@ -54,9 +54,7 @@ COMPLETION_WAITING_DOTS="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-syntax-highlighting z)
-
-source $ZSH/oh-my-zsh.sh
+plugins=(git z zsh-autosuggestions zsh-syntax-highlighting)
 
 # User configuration
 
@@ -86,15 +84,7 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+source $ZSH/oh-my-zsh.sh
+source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+alias rake='noglob rake'
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
-# Avoides conflicts with the `rake` command and zsh in the command line
-alias rake=noglob rake
-
-# Enables syntax highlighting
-source ~/.oh-my-zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh  
-
-# Enables 'z'
-. `brew --prefix`/etc/profile.d/z.sh
-
-# Migrates $PATH from bash to zsh
-source ~/.bash_profile

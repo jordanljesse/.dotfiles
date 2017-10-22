@@ -1,4 +1,4 @@
-execute pathogen#infect()
+" execute pathogen#infect()
 filetype on                                                     " recognize file types for syntax highlighting
 syntax on                                                       " turns on syntax highlighting
 colorscheme slate                                               " sets the current vim color scheme
@@ -13,13 +13,13 @@ set hlsearch                                                    " tells vim to h
 set showmatch                                                   " enables vim to highlight matching parenthesis
 set hidden
 set history=100                                                 " keep more info in memory to speed things up
-map <Leader>r :source ~/.vimrc<CR>                              " press <Leader>+r to reload .vimrc
-noremap <silent> <ESC> :nohlsearch<BAR>:echo<CR>                " allows cancelling a search with Escape
-nnoremap <Leader><Leader> :e#<CR>                               " swap between two most recent files with <Leader><Leader>
-nmap <Leader>n :NERDTreeToggle<CR>                              " toggle NERDtree with <Leader>n
-let NERDTreeMapActivateNode='<right>'                           " press the right arrow to expand a NERDtree node
-let NERDTreeShowHidden=1                                        " enables NERDtree to show hidden files
-let NERDTreeIgnore=['\.DS_Store', '\~$', '\.swp']               " tells NERDtree to ignore files we don't care about
-let g:SuperTabDefaultCompletionType = "context"                 " allows SuperTab to also activate vim's built in OmniComplete
-autocmd FileType html set omnifunc=htmlcomplete#CompleteTags    " vim starts with HTML autocomplete enabled
-noremap <Leader>s :update<CR>                                   " quickly save current buffer(file) with <Leader>s
+" map <Leader>r :source ~/.vimrc<CR>                              " press <Leader>+r to reload .vimrc
+" noremap <silent> <ESC> :nohlsearch<BAR>:echo<CR>                " allows cancelling a search with Escape
+" nnoremap <Leader><Leader> :e#<CR>                               " swap between two most recent files with <Leader><Leader>
+" nmap <Leader>n :NERDTreeToggle<CR>                              " toggle NERDtree with <Leader>n
+" let NERDTreeMapActivateNode='<right>'                           " press the right arrow to expand a NERDtree node
+" let NERDTreeShowHidden=1                                        " enables NERDtree to show hidden files
+" let NERDTreeIgnore=['\.DS_Store', '\~$', '\.swp']               " tells NERDtree to ignore files we don't care about
+" let g:SuperTabDefaultCompletionType = "context"                 " allows SuperTab to also activate vim's built in OmniComplete
+" autocmd FileType html set omnifunc=htmlcomplete#CompleteTags    " vim starts with HTML autocomplete enabled
+" noremap <Leader>s :update<CR>                                   " quickly save current buffer(file) with <Leader>s

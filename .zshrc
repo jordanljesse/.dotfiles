@@ -88,3 +88,10 @@ source $ZSH/oh-my-zsh.sh
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 alias rake='noglob rake'
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+alias c='clear'
+alias gl='git log --graph --abbrev-commit --pretty=oneline'
+alias gs='git status'
+alias ga='git add -A'
+alias gwip='git commit -m "wip"'
+alias blog='/Users/Jordan/Sync/Documents/Sites/jordanljesse.github.io'
+alias portfolio='/Users/Jordan/Sync/Documents/Sites/jordanjesse.com'

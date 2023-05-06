@@ -101,4 +101,6 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias c="clear"
 alias l="ls -ahl"
+
 alias gs="git status"
+alias ga="git add"

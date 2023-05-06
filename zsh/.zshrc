@@ -104,3 +104,5 @@ alias l="ls -ahl"
 
 alias gs="git status"
 alias ga="git add"
+alias gl="git log --pretty=oneline"
+

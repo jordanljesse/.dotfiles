@@ -1,0 +1,1 @@
+Here's a repository of configurations, or .dotfiles, for the tools that I use. I'm consolidating my .dotfiles to a single folder that contains multiple subfolders for each tool that I use. Within each tool's folder contains its respective .dotfile(s) which I then symlink to the appropriate folder using GNU stow.
